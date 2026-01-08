@@ -1,3 +1,121 @@
+:root {
+  --button-bg-color: #596d48;
+  --input-border-color: #e5e7eb;
+  font-size: 14px;
+}
+
 body {
-  background-color: green;
+  height: 100svh;
+  display: flex;
+  font-family: sans-serif;
+}
+
+header {
+  background: url(../images/leaves.avif);
+  color: white;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-family: "Norse";
+  font-size: 88px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  margin-top: 80px;
+}
+
+.bg-img-credit {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.bg-img-credit > a {
+  text-decoration: underline;
+}
+
+main {
+  background: #f9fafb;
+  width: 65%;
+}
+
+.big-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.text-container {
+  padding: 48px;
+}
+
+.text-wrapper {
+  width: 72ch;
+}
+
+.big-text.first {
+  margin-bottom: 16px;
+}
+
+.form-container {
+  background: white;
+  padding: 24px 48px 48px;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.form-container > .big-text {
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 64px;
+}
+
+.input-wrapper {
+  width: 35%;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+input {
+  width: 100%;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.action-wrapper {
+  padding: 32px 48px;
+}
+
+button[type="submit"] {
+  background: var(--button-bg-color);
+  color: white;
+  font-weight: 700;
+  padding: 16px 48px;
+  border-radius: 8px;
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin-bottom: 32px;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  background: rgb(from var(--button-bg-color) r g b / 0.8);
+}
+
+.log-in-link {
+  color: var(--button-bg-color);
+  font-weight: 700;
 }
